@@ -1,0 +1,1 @@
+// PS - Program to check wheter a given string is Palindrome
