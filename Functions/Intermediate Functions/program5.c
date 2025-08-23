@@ -1,0 +1,1 @@
+// PS - program t find the GCD and LCM of two numbers
