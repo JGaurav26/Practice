@@ -5,6 +5,7 @@ class Thali{
     public:
         int jamun;
         int rasgulla;
+        static int lonche;
 
         Thali(int jam = 10, int ras = 5)
         {
@@ -20,9 +21,11 @@ class Thali{
         }
 };
 
+int Thali :: lonche = 111;
 
 int main()
 {
+    cout<<"Value of lonche :: "<<Thali::lonche<<endl;
     Thali thali1;
     thali1.display();
 
