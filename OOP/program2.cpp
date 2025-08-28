@@ -3,46 +3,31 @@ using namespace std;
 
 class Demo
 {
-    int i;
-
     public:
+        int i;
         int j;
-    private:
-        int k;
-    protected:
-        int a;
-
-
-    public:
-        Demo()
-        {
-            i = 10;
-            j = 20;
-            k = 30;
-            a = 40;
-        }
 
         void display()
         {
-            cout<<"Value of i :: "<<i<<endl;
-            cout<<"Value of j :: "<<j<<endl; 
-            cout<<"Value of k :: "<<k<<endl;
-            cout<<"Value of a :: "<<a<<endl;
-        }
+            cout<<"The value of i = "<<i<<endl;
+            cout<<"The value of j = "<<j<<endl;
+            cout<<"Inside the display of Demo class"<<endl;
 
+        }
 };
 
 int main()
 {
-    Demo obj;
-    cout<<"Value of j = "<<obj.j<<endl;
+    Demo obj1;
+    Demo obj2;
 
-    /* NOT ALLOWED
-    cout<<"Value of i = "<<obj.i<<endl;
-    cout<<"Value of k = "<<obj.k<<endl;
-    cout<<"Value of a = "<<obj.a<<endl;
-    */
+    obj1.i = 10;
+    obj1.j = 20;
+    obj1.display();
 
-    obj.display();
+    obj2.i = 30;
+    obj2.j = 40;
+    obj2.display();
+
     return 0;
 }
