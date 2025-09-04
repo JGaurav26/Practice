@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 void LinearSearch()
 {
@@ -6,7 +7,7 @@ void LinearSearch()
     printf("Enter the total number of elements in Array :: ");
     scanf("%d", &n);
 
-    int iArr[n];
+    int *iArr = (int *)malloc(n * sizeof(int));
     printf("Enter the %d elements :: ", n);
     for(int i=0; i<n; i++)
     {
@@ -31,6 +32,7 @@ void LinearSearch()
         }
     }
     printf("%d not found in the given array\n", key);
+    free(iArr);
 }
 
 int main()
